@@ -1,0 +1,74 @@
+{
+    "name": "Hello World",
+    "layout": {
+        "props": {},
+        "version": "0.2",
+        "slot": {
+            "9e84766b-0436-4152-b6e8-3dc8a678c0c5": {
+                "id": "9e84766b-0436-4152-b6e8-3dc8a678c0c5",
+                "type": "image-input",
+                "props": {
+                    "label": "\"Upload\""
+                },
+                "colStart": 1,
+                "rowStart": 6,
+                "colEnd": 3,
+                "rowEnd": 9,
+                "events": {},
+                "variable": "img"
+            },
+            "56dde203-380f-4a50-b79c-a21ca096bdd7": {
+                "id": "56dde203-380f-4a50-b79c-a21ca096bdd7",
+                "type": "text-output",
+                "props": {
+                    "text": "predict(img.file.read())",
+                    "size": "'large'"
+                },
+                "colStart": 5,
+                "rowStart": 14,
+                "colEnd": 7,
+                "rowEnd": 15,
+                "events": {}
+            },
+            "0e86cc9e-7e7c-4e68-ace8-ca0b228fdea7": {
+                "id": "0e86cc9e-7e7c-4e68-ace8-ca0b228fdea7",
+                "type": "text-output",
+                "props": {
+                    "text": "\"The predicted number is\"",
+                    "size": "'large'"
+                },
+                "colStart": 1,
+                "rowStart": 14,
+                "colEnd": 4,
+                "rowEnd": 15,
+                "events": {}
+            },
+            "80dc4155-843e-4807-9ba8-03db3a2e9321": {
+                "id": "80dc4155-843e-4807-9ba8-03db3a2e9321",
+                "type": "image-output",
+                "props": {
+                    "image": "\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeKi_2Hrwi3O9f6ot2z0ya9AC6x46KUGhe2g&usqp=CAU\""
+                },
+                "colStart": 8,
+                "rowStart": 5,
+                "colEnd": 11,
+                "rowEnd": 11,
+                "events": {}
+            },
+            "ba1c6bda-4191-4909-aff7-a6adeba240ce": {
+                "id": "ba1c6bda-4191-4909-aff7-a6adeba240ce",
+                "type": "text-output",
+                "props": {
+                    "text": "\"Upload a handwritten number image\"",
+                    "size": "'large'"
+                },
+                "colStart": 1,
+                "rowStart": 3,
+                "colEnd": 6,
+                "rowEnd": 4,
+                "events": {}
+            }
+        }
+    },
+    "title": "Neural network"
+}

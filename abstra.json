@@ -1,0 +1,20 @@
+{
+    "workspace": {
+        "name": "Untitled Workspace",
+        "theme": "white",
+        "brand_name": "Project",
+        "logo_url": "",
+        "main_color": "#414a58",
+        "font_family": "Inter",
+        "font_color": "#ffffff",
+        "sidebar": [
+            {
+                "id": "helloworld",
+                "name": "Neural network",
+                "path": "helloworld",
+                "visible": false,
+                "type": "dash"
+            }
+        ]
+    }
+}
