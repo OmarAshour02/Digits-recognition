@@ -1,20 +1,25 @@
-# Digits-recognition
-A program to predict a handwritten digit
+# Digits Recognition
 
-This project includes an example of how to use a trained neural network model to predict handwritten digits from an image using the MNIST dataset.
+This project is an implementation of a deep learning model for recognizing handwritten digits using the MNIST dataset. The model is built using Python and TensorFlow.
 
-Here's a brief explanation of what each section of the code does:
+## Overview
 
-The first section of the code imports the necessary libraries, including OpenCV, NumPy, TensorFlow, and Matplotlib.
+The **Digits Recognition** project aims to develop a machine learning model capable of accurately identifying handwritten digits. It utilizes a convolutional neural network (CNN) architecture to achieve high accuracy in digit recognition.
 
-The next section of the code defines the neural network model to be used for predicting the handwritten digits. The model has three dense layers with ReLU activation and one softmax output layer.
+## Features
 
-The next section of the code compiles the model with the SparseCategoricalCrossentropy loss function, the Adam optimizer, and the accuracy metric, and then trains the model on the MNIST dataset.
+- Training a deep learning model to recognize handwritten digits.
+- Evaluating the model's accuracy on a test dataset.
+- Predicting digits in real-time using the trained model.
+- Visualizing sample predictions.
 
-After training the model, it is saved to a file named practical.model.
+## Prerequisites
 
-The next section of the code defines a function named predict that takes an image as a string, converts it to grayscale, resizes it to (28, 28), inverts the image, and then normalizes it. The function then uses the trained model to predict the digit in the image and returns the predicted value.
+- Python 3.x
+- TensorFlow
+- NumPy
+- Matplotlib
 
-Finally, the code loads the trained model from the practical.model file and uses the predict function to make predictions on new images.
 
-Overall, this code demonstrates how to train a neural network model to recognize handwritten digits, save the model, and then use the model to make predictions on new images. The predict function can be used to integrate the trained model into a larger application for digit recognition.
+
+
