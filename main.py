@@ -6,30 +6,30 @@ import matplotlib.pyplot as plt
 from tensorflow import keras
 
 # Preparing the data
-# mnist = tf.keras.datasets.mnist
-# (x_train, y_train), (x_test, y_test) = mnist.load_data()
-# x_train = tf.keras.utils.normalize(x_train, axis=1)
-# x_test = tf.keras.utils.normalize(x_test, axis=1)
+mnist = tf.keras.datasets.mnist
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+x_train = tf.keras.utils.normalize(x_train, axis=1)
+x_test = tf.keras.utils.normalize(x_test, axis=1)
 
-# #Network
-# model = tf.keras.models.Sequential(
-#     [
-#         tf.keras.layers.Flatten(input_shape=(28, 28)),
-#         tf.keras.layers.Dense(128, activation='relu'), #max(0,z)
-#         tf.keras.layers.Dense(128, activation='relu'),
-#         tf.keras.layers.Dense(10, activation='softmax')
-#     ]
-# )
+#Network
+model = tf.keras.models.Sequential(
+    [
+        tf.keras.layers.Flatten(input_shape=(28, 28)),
+        tf.keras.layers.Dense(128, activation='relu'), #max(0,z)
+        tf.keras.layers.Dense(128, activation='relu'),
+        tf.keras.layers.Dense(10, activation='softmax')
+    ]
+)
 
-# model.compile(
-#     loss=tf.keras.losses.SparseCategoricalCrossentropy(),
-#     optimizer=tf.keras.optimizers.Adam(0.001),
-#     metrics=['accuracy']
-# )
+model.compile(
+    loss=tf.keras.losses.SparseCategoricalCrossentropy(),
+    optimizer=tf.keras.optimizers.Adam(0.001),
+    metrics=['accuracy']
+)
 
-# model.fit(x_train, y_train, epochs=12)
+model.fit(x_train, y_train, epochs=12)
 
-# model.save('practical.model')
+model.save('practical.model')
 
 model = tf.keras.models.load_model('practical.model')
 
